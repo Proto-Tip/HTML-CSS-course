@@ -1,0 +1,294 @@
+body {
+    margin: 0;
+    
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #333;
+
+    background: #fff;
+}
+
+.title {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+.justify {
+    text-align: justify;
+    font-weight: bold;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+ul {
+    list-style-type: square;
+    list-style-position: outside;
+    color: #113d90;
+}
+
+ol {
+    list-style-type: decimal-leading-zero;
+}
+
+.table {
+    width: 100%;
+    border: 1px dotted #aaaaaa;
+    border-collapse: collapse;
+}
+
+.table th {
+    padding: 5px 10px;
+    text-align: left;
+    color: #aaaaaa;
+}
+
+.table td {
+    padding: 5px 10px;
+    border: 1px dotted #aaaaaa;
+}
+
+.table tfoot td {
+    text-align: right;
+}
+
+.text-red {
+    color: #e80f0f;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.page {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Post */
+.post {
+    width: 700px;
+    height: 400px;
+    padding: 15px 25px;
+    margin: 0 auto 20px;
+    border: 1px solid #ddd;
+    background: url("../img/bg.jpg") no-repeat center;
+    background-size: cover;
+}
+
+.post-title {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #e8e820;
+}
+
+.post-text {
+    color: #fff;
+}
+
+.post-text p {
+    margin: 0 0 10px 0;
+}
+
+/* Gradient */
+.gradient {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    /* background-image: linear-gradient(to left, #fff 20%, #333 20%, #333 40%, #fff 40%, #fff 60%, #333 60%, #333 80%, #fff 80%); */
+    background-image: radial-gradient(circle, #fff, #333);
+}
+
+/* Form */
+
+.form {
+    width: 500px;
+    padding: 20px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    display: block;
+    padding: 5px;
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form-input:focus {
+    outline: none;
+    background-color: #9bcce6;
+}
+
+.form-textarea {
+    width: 200px;
+    height: 150px;
+    padding: 5px;
+    border: 1px solid #000;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+}
+
+.form-textarea:focus {
+    outline: none;
+    background-color: #9bcce6;
+}
+
+.link {
+    color: #113d90;
+    text-decoration: none;
+}
+
+.link:visited {
+    color: #7c1190;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    padding: 5px 10px;
+    background-color: #26a814;
+    border: 1px solid #1e930e;
+    color: #fff;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background-color: #1e930e;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    background-color: #444;
+    color: #959595;
+    cursor: not-allowed;
+    border: 1px solid #444;
+}
+
+.btn:active {
+   background-color: #124d0a; 
+}
+
+
+.form-fieldset {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.form-title {
+    margin: 0 0 15px;
+}
+
+
+/* Modal */
+
+.modal {
+    width: 500px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    
+    position: relative;
+    
+    background-color: #eee;
+}
+
+.modal-title {
+    margin: 0;
+}
+
+.square {
+    width: 50px;
+    height: 50px;
+    
+    background-color: #333;
+    
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    z-index: 1;
+}
+
+.square.red {
+    background-color: #8d0707;
+    right: -15px;
+    top: -5px;
+    z-index: 2;
+}
+
+.square-fixed {
+    width: 50px;
+    height: 50px;
+    margin-top: -25px;
+    margin-left: -25px;
+    
+    background-color: #2119e3;
+    
+    position: fixed;
+    top: 50%;
+    left: 50%;
+}
+
+/* Pseudo */
+.pseudo-title {
+    margin: 0;
+    position: relative;
+    
+    font-size: 30px;
+    text-align: center;
+}
+
+.pseudo-title:before {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    margin-left: -35px;
+    
+    background-color: red;
+    
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+}
+
+.pseudo-title:after {
+    content: "";
+    display: block;
+    margin: 5px auto;
+    width: 70px;
+    height: 3px;
+    
+    background-color: #1325b1;
+}
+
+.pseudo-text p:first-letter {
+    font-size: 25px;
+}
+
+.pseudo-text p:first-line {
+    color: #aa0606;
+}
+
+
+
+
+
+
+
+
+
