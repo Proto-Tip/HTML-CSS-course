@@ -9,6 +9,12 @@ body {
     background: #fff;
 }
 
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 .title {
     font-family: Tahoma, sans-serif;
     text-align: center;
@@ -67,7 +73,9 @@ ol {
     margin-right: auto;
 }
 
+
 /* Post */
+
 .post {
     width: 700px;
     height: 400px;
@@ -92,7 +100,9 @@ ol {
     margin: 0 0 10px 0;
 }
 
+
 /* Gradient */
+
 .gradient {
     width: 600px;
     height: 300px;
@@ -100,6 +110,7 @@ ol {
     /* background-image: linear-gradient(to left, #fff 20%, #333 20%, #333 40%, #fff 40%, #fff 60%, #333 60%, #333 80%, #fff 80%); */
     background-image: radial-gradient(circle, #fff, #333);
 }
+
 
 /* Form */
 
@@ -129,9 +140,11 @@ ol {
 
 .form-textarea {
     width: 200px;
-    height: 150px;
+    min-height: 150px;
+    max-height: 500px;
     padding: 5px;
     border: 1px solid #000;
+    resize: vertical;
     font-family: Arial, sans-serif;
     font-size: 15px;
 }
@@ -159,6 +172,8 @@ ol {
     background-color: #26a814;
     border: 1px solid #1e930e;
     color: #fff;
+    
+    transition: background 0.2s linear, border-color 0.2s linear;
 }
 
 .btn:focus {
@@ -244,6 +259,7 @@ ol {
 }
 
 /* Pseudo */
+
 .pseudo-title {
     margin: 0;
     position: relative;
@@ -285,10 +301,85 @@ ol {
 }
 
 
+/* CSS3 */
+
+.element {
+    width: 400px;
+    height: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    
+    box-sizing: border-box;
+    
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    box-shadow: -5px 5px 20px #9f9b9b inset, -5px 5px 20px #9f9b9b;
+    opacity: 0.8;
+}
+
+.element-title {
+    margin: 0;
+    
+    text-shadow: 1px 1px 2px #9f9b9b, 2px 2px 5px #af1010;
+}
 
 
+/* Page */
 
+.page {
+    width: 600px;
+    margin: 20px auto;
+}
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    background-color: #eee;
+}
+
+.header-item {
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.header-tel {
+    order: 1;
+}
+
+.header-logo {
+    order: 2;
+}
+
+.header-lang {
+    order: 3;
+}
+
+.content {
+    display: flex;
+}
+
+.sidebar {
+    width: 30%;
+    padding: 10px;
+    
+    background-color: #333;
+}
+
+.main {
+    width: 70%;
+    padding: 20px;
+    
+    background-color: #ccc;
+}
+
+.footer {
+    padding: 20px;
+    
+    background-color: #eee;
+}
 
 
 
